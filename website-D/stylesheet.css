@@ -1,0 +1,380 @@
+body {
+  background-color: #000000;
+  color: #f9faf1;
+  font-family: "Open Sans", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+
+}
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.top-container {
+  background-color: #3d2225;
+}
+
+/* NAV */
+
+a {
+  color: #f9faf1;
+  text-decoration: none;
+  transition: 0.3s linear;
+
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  background-color: none;
+  padding: 40px 0px 20px 0px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 3;
+}
+
+
+.row {
+  width: 80%;
+  margin: auto;
+}
+
+.logo {
+  font-size: 4.5rem;
+  transition: 0.3s linear;
+  z-index: 4;
+  filter: drop-shadow(0 0 0.15rem #cccccc);
+
+}
+
+.logo:hover {
+  color: #cccccc;
+  transition: 0.3s linear;
+  font-size: 4.7rem;
+  transition: 0.3s linear;
+  filter: drop-shadow(0 0 0.45rem #cccccc);
+}
+
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  align-items: center;
+}
+
+.navbar .main-menu {
+  display: flex;
+}
+
+.main-menu li a {
+  display: inline-block;
+  padding: 20px 20px;
+}
+
+li a:hover {
+  color: #cccccc;
+  transition: 0.3s linear;
+}
+
+.menu-btn {
+  display: none;
+
+
+}
+
+.section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.row-content h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.row-content p {
+  font-size: 2.5rem;
+  text-align: center;
+  line-height: 1.6;
+
+}
+
+/* HERO */
+
+.hero {
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 1)), url('images/_hero.png') center center / cover no-repeat;
+  animation: animation-hero 40s infinite linear;
+  animation-direction: alternate;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  scale: 2;
+  z-index: -1;
+}
+
+@keyframes animation-hero {
+  100% {
+
+    scale: 1;
+  }
+}
+
+h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 3;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  color: #f9faf1;
+  font: normal 200 72px/1 'Open Sans', sans-serif;
+  text-align: center;
+  white-space: nowrap;
+  filter: drop-shadow(0 0 0.10rem #cccccc);
+
+}
+
+h1 span {
+  display: block;
+  margin-top: 1em;
+  font-size: 40px;
+  font-weight: 300;
+}
+
+
+
+
+.tile-head1 {
+
+  color: #f9faf1;
+  font: normal 200 52px/1 'Open Sans', sans-serif;
+  filter: drop-shadow(0 0 0.10rem #cccccc);
+}
+
+
+.tile-head2 {
+
+  color: #f9faf1;
+  font: normal 200 52px/1 'Open Sans', sans-serif;
+  filter: drop-shadow(0 0 0.10rem #cccccc);
+  text-align: left;
+}
+
+.contents {
+  padding-bottom: 3em;
+  background: linear-gradient(rgba(0, 0, 0, 1), rgba(100, 100, 100, 1));
+}
+
+.contents p {
+  width: 800px;
+  margin: 0 auto;
+  padding: 3em 3em 0;
+  color: #fff;
+  font: normal 300 20px/1.8 'Open Sans', sans-serif;
+}
+
+/* DIVIDER */
+
+.divider {
+  line-height: 800px;
+  opacity: 100%;
+  z-index: 1;
+
+}
+
+.divider2 {
+  line-height: 400px;
+  opacity: 100%;
+  z-index: 1;
+
+}
+
+/* ARROW */
+
+
+.arrow {
+  color: #f9faf1;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-size: 60px;
+  filter: drop-shadow(0 0 0.15rem #cccccc);
+
+}
+
+.arrow:hover {
+  color: #f9faf1;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-size: 70px;
+  filter: drop-shadow(0 0 0.45rem #cccccc);
+}
+
+.arrow2 {
+  color: #f9faf1;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-size: 60px;
+  filter: drop-shadow(0 0 0.15rem #cccccc);
+
+
+}
+
+.arrow2:hover {
+  color: #f9faf1;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-size: 70px;
+  filter: drop-shadow(0 0 0.45rem #cccccc);
+}
+
+
+.anchor1 {
+  padding-top: 200px;
+}
+
+.anchor2 {
+  padding-top: 200px;
+}
+
+/* CONTENT MODULE */
+
+
+.content-module {
+  max-width: 1600px;
+  height: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  background: url("images/_hero.png") no-repeat center center;
+  background-size: contain;
+  background-color: #3d2225 !important;
+
+
+}
+
+.content-module .col {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  justify-content: center;
+  padding: 2rem;
+  background-color: #3d2225 !important;
+}
+
+.content-module2 {
+  direction: rtl;
+  max-width: 1600px;
+  height: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  background: url("images/_hero.png") no-repeat center center;
+  background-size: contain;
+  background-color: #3d2225 !important;
+  text-align: left;
+
+}
+
+.content-module2 .col {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  justify-content: center;
+  padding: 2rem;
+  background-color: #3d2225 !important;
+}
+
+.otl-label {
+  border: 1px solid #fff;
+  padding: 0.25rem 0.75rem;
+  border-radius: 2rem;
+  font-size: 12px;
+  width: fit-content;
+}
+
+.tile-copy1 {
+  color: #999;
+  font-size: 15px;
+}
+
+.tile-copy2 {
+  color: #999;
+  font-size: 15px;
+  text-align: left;
+}
+
+
+/* FOOTER */
+
+footer {
+  background: none;
+  padding: 20px 0px 20px 0px;
+  /* border-top: 2px solid #f9faf1; */
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer_container {
+  max-width: 1300px;
+  margin: auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+}
+
+
+.social_media {
+  /* margin: 20px 150px; */
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  filter: drop-shadow(0 0 0.15rem #cccccc);
+}
+
+.social_media a {
+  color: #f9faf1;
+  font-size: 40px;
+  text-decoration: none;
+  transition: 0.6s;
+}
+
+.social_media a:hover {
+  filter: drop-shadow(0 0 0.45rem #cccccc);
+  scale: 2;
+}
